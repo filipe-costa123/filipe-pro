@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Subrede</title>
+    <link rel="stylesheet" href="stily.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Sub-rede</h1>
+        <form id="subnet-form">
+            <label for="ip">Endereço IP:</label>
+            <input type="text" id="ip" placeholder="Ex: 192.168.1.1">
+
+            <label for="mask">Máscara de Subrede:</label>
+            <input type="text" id="mask" placeholder="Ex: 255.255.255.0">
+
+            <button type="button" onclick="calcularSubrede()">Calcular</button>
+        </form>
+
+        <div id="result">
+            <p><strong>Rede:</strong> <span id="rede"></span></p>
+            <p><strong>Broadcast:</strong> <span id="broadcast"></span></p>
+            <p><strong>Primeiro IP válido:</strong> <span id="ip_valido_1"></span></p>
+            <p><strong>Último IP válido:</strong> <span id="ip_valido_2"></span></p>
+            <p><strong>Quantidade de Hosts:</strong> <span id="hosts"></span></p>
+            <p><strong>Máscara CIDR:</strong> <span id="cidr"></span></p>
+            <p><strong>Número de Sub-redes:</strong> <span id="subredes"></span></p>
+        </div>
+    </div>
+
+
+
+    
+
+    <script src="f.js"></script>
+</body>
+</html>
